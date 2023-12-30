@@ -1,0 +1,356 @@
+.campaignAll {
+  position: relative;
+  margin-left: 14rem;
+  width: calc(100% - margin-left);
+  height: 92.5vh;
+  transition: all 0.3s ease;
+  padding-block: 1.7rem;
+  padding-inline: 2rem 2.5rem;
+
+  .headings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .sec1 {
+      flex: 0.58;
+      font-family: Poppins;
+
+      > h1 {
+        color: var(--gray-palette-600, #6f757e);
+        font-size: 1.15rem;
+        font-weight: 600;
+      }
+      > p {
+        color: var(--gray-palette-600, #6f757e);
+        font-size: 0.9rem;
+        font-weight: 400;
+        margin-block: 0.8rem;
+      }
+    }
+    .sec2 {
+      > a {
+        position: relative;
+        bottom: 1.1rem;
+        > button {
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0.3rem 0.8rem;
+          border-radius: 0.4rem;
+          gap: 0.5rem;
+          color: var(--gray-palette-100, #fff);
+          font-family: Poppins;
+          color: white;
+          border: 2px solid var(--primary-700, #339af0);
+          background: var(--primary-700, #339af0);
+
+          > p {
+            font-size: 0.9rem;
+            font-weight: 400;
+          }
+          > span {
+            font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+          }
+        }
+      }
+    }
+  }
+
+  .campaignListSec {
+    border-radius: 0.8rem;
+    border: 1px solid var(--gray-palette-300, #e7e8e9);
+    background: var(--12-background-light-02-paper, #fff);
+    overflow: hidden;
+    margin-block: 1rem;
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--gray-palette-200, #f3f3f4);
+      height: 3rem;
+
+      > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .sec1 {
+        padding: 1% 0.5%;
+        margin: 1%;
+
+        > div {
+          margin-inline-end: 1.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: Poppins;
+          gap: 0.4rem;
+
+          > span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1.3rem;
+            height: 1.2rem;
+            font-size: 0.7rem;
+            font-weight: 600;
+            border-radius: 0.2rem;
+            background: var(--gray-palette-400, #cfd1d4);
+          }
+          > p {
+            font-size: 0.7rem;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .sec2 {
+        padding: 1%;
+        margin: 1%;
+        gap: 0.8rem;
+
+        > p {
+          color: var(--gray-palette-600, #6f757e);
+          font-family: Poppins;
+          font-size: 0.8rem;
+          font-weight: 400;
+        }
+        > button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 0.4rem;
+          border: 1px solid var(--gray-palette-400, #cfd1d4);
+          background: var(--gray-palette-100, #fff);
+          padding: 0.2rem 0.5rem;
+          color: var(--gray-palette-600, #6f757e);
+          font-family: Poppins;
+
+          > p {
+            font-weight: 400;
+            font-size: 0.8rem;
+            margin-inline: 0.3rem;
+          }
+          > span {
+            font-size: 1rem;
+          }
+
+          > img {
+            width: 1.1rem;
+            height: 1.1rem;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+
+    .searchSection {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2% 2%;
+
+      > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .selectAll {
+        gap: 0.7rem;
+        border-radius: 0.4rem;
+        border: 1px solid var(--gray-palette-400, #cfd1d4);
+        padding: 0.4rem 0.7rem;
+
+        > p {
+          color: var(--gray-palette-600, #6f757e);
+          font-family: Poppins;
+          font-size: 0.8rem;
+          font-weight: 300;
+        }
+      }
+
+      .search {
+        border-radius: 0.4rem;
+        padding: 0.2rem 0.5rem;
+        border: 1px solid var(--gray-palette-400, #cfd1d4);
+        display: flex;
+        justify-content: flex-start;
+        gap: 0.5rem;
+        align-items: center;
+        max-width: 28rem;
+        width: 100%;
+        height: 2rem;
+        .searchIcon {
+          width: 1.3rem;
+          display: flex;
+          align-items: center;
+          height: 1.3rem;
+          > img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+        > input {
+          width: 100%;
+          border: none;
+          outline: none;
+        }
+        > input::placeholder {
+          color: var(--gray-palette-600, #6f757e);
+          font-family: Poppins;
+          font-size: 0.8rem;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
+  .campaignTable {
+    padding: 1% 2%;
+
+    > table {
+      width: 100%;
+      text-align: left;
+
+      > tr {
+        border-bottom: 1px solid var(--gray-palette-200, #f3f3f4);
+        > td:nth-child(1) {
+          width: 100%;
+          padding-block: 0.4rem;
+          padding-left: 0.6rem;
+
+          > div {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            > span {
+              margin-inline: 1rem 0.7rem;
+              font-size: 0.8rem;
+              color: #339af0;
+            }
+
+            .name {
+              margin-inline-end: 2rem;
+              font-family: Poppins;
+              line-height: 1.3;
+
+              > p {
+                font-size: 0.75rem;
+                font-weight: 500;
+              }
+
+              > span {
+                font-size: 0.7rem;
+                color: var(--gray-palette-600, #6f757e);
+              }
+            }
+          }
+        }
+        > td:nth-child(2) {
+          color: var(--gray-palette-600, #6f757e);
+          font-family: Poppins;
+          font-size: 0.7rem;
+          font-weight: 400;
+        }
+        > td:nth-child(3) {
+          color: var(--gray-palette-600, #6f757e);
+          font-family: Poppins;
+          font-size: 0.7rem;
+          font-weight: 400;
+        }
+
+        > td:nth-child(4) {
+          > img {
+            width: 5.3rem;
+            height: auto;
+          }
+        }
+
+        > td:nth-child(5) {
+          > div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-inline: 0.8rem;
+
+            .active {
+              border-radius: 0.2rem;
+              background: var(
+                --09-transparent-03-success-16,
+                rgba(84, 214, 44, 0.16)
+              );
+              padding: 0.1rem 0.4rem;
+              display: flex;
+              align-items: start;
+
+              > span {
+                font-weight: 600;
+                color: var(--04-success-04-dark, #229a16);
+                text-align: center;
+                font-family: Poppins;
+                font-size: 0.6rem;
+              }
+            }
+            > span {
+              font-size: 1.2rem;
+              color: #637381;
+            }
+          }
+        }
+      }
+    }
+
+    > table:nth-child(1) {
+      border-radius: 0.5rem;
+      background: var(--gray-palette-200, #f3f3f4);
+      color: var(--gray-palette-600, #6f757e);
+      padding: 0.8rem 2.7rem;
+      font-family: Poppins;
+      font-size: 0.8rem;
+
+      > tr {
+        > th {
+          color: var(--gray-palette-600, #6f757e);
+          font-family: Poppins;
+          font-size: 0.75rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .tableFooter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1%;
+    background: var(--12-background-light-02-paper, #fff);
+    box-shadow: 0px 1px 0px 0px rgba(145, 158, 171, 0.24) inset;
+    font-family: Poppins;
+
+    > p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-inline: 0.8rem;
+      font-size: 0.76rem;
+      font-weight: 400;
+      color: var(--11-text-color-light-01-text-primary, #212b36);
+
+      > span {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+.campaignAll.compress {
+  margin-left: 6rem;
+}

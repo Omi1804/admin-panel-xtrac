@@ -1,0 +1,110 @@
+.navbar {
+  margin-left: 14rem;
+  width: calc(100% - margin-left);
+  transition: width 0.3s ease;
+  border-bottom: 1px solid var(--gray-palette-400, #cfd1d4);
+  background: #fff;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+
+  .sec1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-height: 3.7rem;
+    padding-block: 1%;
+    padding-inline: 0 1%;
+    font-family: "Poppins";
+
+    .headings {
+      color: #222;
+      font-size: 1.25rem;
+      margin-inline: 2rem;
+      font-weight: 500;
+    }
+    .instagramButton {
+      margin-inline: 0.3rem 1rem;
+    }
+    .input {
+      display: flex;
+      border-radius: 0.4rem;
+      border: 1px solid rgba(143, 157, 164, 0.5);
+      align-items: center;
+      padding: 0.3rem;
+      width: 18rem;
+      height: 2rem;
+
+      > span {
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+      }
+      > input {
+        width: 100%;
+        border: none;
+        outline: none;
+      }
+      > input::placeholder {
+        outline: none;
+        color: #d9d9d9;
+        font-family: Montserrat;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25rem; /* 142.857% */
+      }
+    }
+
+    .profileIcons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 15rem;
+      margin-right: 1rem;
+      margin-left: auto;
+
+      > div {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      .icon1,
+      .icon2 {
+        width: 2.1rem;
+        height: 2.1rem;
+        border-radius: 0.4rem;
+        border: 1px solid var(--primary-200, #bbbbf2);
+        padding: 0.45rem;
+        margin-inline: 0.4rem;
+
+        > svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .profile {
+        margin-inline: 0.4rem;
+      }
+    }
+  }
+}
+.filters {
+  margin-left: 12rem;
+}
+.advanceFilters {
+  margin-left: 1rem;
+}
+
+.navbar.compress {
+  margin-left: 6rem;
+  width: calc(100% - margin-left);
+}
+.navbar.compress .filters {
+  margin-left: 20rem;
+}
+
+.navbar.compress .sec1 {
+  padding-inline: 0.7rem;
+}

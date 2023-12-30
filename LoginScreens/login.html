@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheet/login.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="loginPage">
+      <div class="loginImg"></div>
+      <div class="loginForm">
+        <div class="loginBrandIcon">
+          <div class="icon">
+            <img src="./assets/brandIcon.svg" alt="" />
+          </div>
+          <div class="brandName">Xtracktion</div>
+        </div>
+        <div class="errorView" style="display: none">
+          <div class="errorHeadings">
+            <h1>Error!</h1>
+            <p class="errorDescription"></p>
+          </div>
+          <button class="tryAgainButton">Try Again</button>
+        </div>
+        <div class="loginHeadings">
+          <h1>Welcome back!</h1>
+          <p>Please enter your credentials.</p>
+        </div>
+        <div class="formContent">
+          <form class="loginFormFields">
+            <div class="email">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="password">
+              <label for="password">Password</label>
+              <div style="display: flex; align-items: center">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Enter your password"
+                />
+                <img
+                  src="./assets/closeEye.svg"
+                  alt="Toggle password visibility"
+                  onclick="togglePasswordVisibility()"
+                  style="cursor: pointer; margin-left: 10px"
+                />
+              </div>
+            </div>
+            <p class="forgotPass">Forgot password?</p>
+
+            <button type="submit" class="loginButton">Login</button>
+          </form>
+        </div>
+
+        <div class="alreadyAccount">
+          <p>Don't have an account?</p>
+          <span>Sign up here!</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function togglePasswordVisibility() {
+        var passwordInput = document.getElementById("password");
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+        } else {
+          passwordInput.type = "password";
+        }
+      }
+    </script>
+    <script src="./scripts/login.js"></script>
+  </body>
+</html>

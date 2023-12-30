@@ -1,0 +1,37 @@
+.back {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  background: var(--gray-palette-200, #f3f3f4);
+  position: relative;
+  margin-left: 14rem;
+  width: calc(100% - margin-left);
+  transition: all 0.3s ease;
+  padding: 0.7rem;
+
+  > button {
+    padding-block: 0.2rem;
+    padding-inline: 0.2rem 0.6rem;
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+    border-radius: 0.4rem;
+    background: var(--gray-palette-100, #fff);
+    border: none;
+    outline: none;
+
+    > span {
+      font-size: 1.65rem;
+      color: #9fa3a9;
+      width: 1.5rem;
+    }
+    > p {
+      color: var(--gray-palette-500, #9fa3a9);
+      font-family: Poppins;
+      font-size: 1.05rem;
+      font-weight: 500;
+    }
+  }
+}
+.back.compress {
+  margin-left: 6rem;
+}

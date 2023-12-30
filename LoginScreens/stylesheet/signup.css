@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+input::placeholder {
+  color: var(--text-slate-color-20, #cbd1d8);
+  font-family: montserrat;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.logo-animation {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  padding: 5%;
+
+  .successBrandIcon {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-block-end: 2rem;
+
+    .logo {
+      width: 6rem;
+      height: 6rem;
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+
+    .brandName {
+      color: #000;
+      font-family: Poppins;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+  }
+
+  .successGif {
+    width: 12rem;
+    height: 12rem;
+
+    > video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .successMsg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+
+    > p {
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-block: 2rem 3.5rem;
+    }
+    .successSubMsg {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      > p {
+        font-size: 1.7rem;
+        font-weight: 500;
+        line-height: 1.4;
+        letter-spacing: 1px;
+      }
+    }
+    > a {
+      color: var(--primary-700, #339af0);
+      text-align: center;
+      font-family: Poppins;
+      font-size: 0.9rem;
+      margin-block-start: 1rem;
+      cursor: pointer;
+      font-weight: 400;
+
+      text-decoration-line: underline;
+    }
+  }
+}
+
+.signupPage {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 35% 65%;
+  overflow: hidden;
+  position: relative;
+}
+
+.signupImg {
+  width: 100%;
+  height: 100vh;
+  background: url("../assets/signupImg.png");
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.signupForm {
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+}
+
+.signupBrandIcon {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  right: 1rem;
+  align-items: center;
+  width: 100%;
+  gap: 2%;
+
+  .icon {
+    width: 5.5rem;
+    height: 5.5rem;
+
+    > svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .brandName {
+    color: #000;
+    font-family: Poppins;
+    font-size: 3rem;
+
+    font-weight: 600;
+  }
+}
+
+.signupHeadings {
+  margin-block: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  > h1 {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+  > p {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-block-start: 1%;
+  }
+}
+.formContent {
+  margin-block-start: 3%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  > form {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4%;
+
+    > div {
+      margin-block: 0.8rem;
+      > label {
+        display: block;
+        color: var(--text-slate-color-90, #323a46);
+        font-family: Montserrat;
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-block-end: 1%;
+      }
+      > input {
+        outline: none;
+        width: 100%;
+        display: flex;
+        height: 2.1rem;
+        padding: 0.5rem 1rem;
+        align-items: center;
+        gap: 0.49694rem;
+        align-self: stretch;
+        border-radius: 0.39756rem;
+        border: 0.795px solid var(--text-slate-color-20, #cbd1d8);
+        background: #fafafc;
+      }
+    }
+    > button {
+      display: flex;
+      padding: 0.75rem 0.5rem;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      color: white;
+      align-self: stretch;
+      border-radius: 0.39756rem;
+      border: none;
+      background: var(--gray-palette-900, #0f1928);
+      margin-block: 2% 6%;
+      cursor: pointer;
+    }
+  }
+}
+
+.email,
+.password,
+.confirmPassword,
+.signupButton {
+  grid-column: 1 / span 2;
+}
+
+.alreadyAccount {
+  display: flex;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  > p {
+    color: var(--text-slate-color-50, #7e8b9e);
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 1.3125rem */
+    letter-spacing: 0.00875rem;
+  }
+  > span {
+    color: var(--primay-color-blue-50, #3568ff);
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.00875rem;
+    cursor: pointer;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10%);
+  }
+}
+
+.logo-animation {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.signupPage {
+  transition: transform 0.5s ease-in-out;
+}
+
+.successBrandIcon {
+  opacity: 0;
+  transition: transform 1s ease-in-out;
+}
+
+.logo {
+  transition: transform 2s ease-in-out;
+}
+
+.successBrandIcon .brandName {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.successMsg,
+.successGif {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.logo.blink {
+  animation: blinking 1s infinite;
+}

@@ -1,0 +1,7 @@
+.AreaGraph {
+  color: var(--gray-palette-900, #0f1928);
+  text-align: right;
+  font-family: Poppins;
+  font-size: 0.9rem;
+  font-weight: 400;
+}

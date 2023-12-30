@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheet/signup.css" />
+  </head>
+  <body>
+    <div class="signupPage">
+      <div class="signupImg"></div>
+
+      <div class="signupForm">
+        <div class="signupBrandIcon">
+          <div class="icon">
+            <img src="./assets/brandIcon.svg" alt="" />
+          </div>
+          <div class="brandName">Xtracktion</div>
+        </div>
+        <div class="signupHeadings">
+          <h1>Create your account</h1>
+          <p>Please enter your credentials.</p>
+        </div>
+        <div class="formContent">
+          <form>
+            <div class="firstName">
+              <label for="firstName">First Name</label>
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="Rohan"
+              />
+            </div>
+            <div class="lastName">
+              <label for="lastName">Last Name</label>
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Singh"
+              />
+            </div>
+            <div class="companyName">
+              <label for="companyName">Company Name</label>
+              <input
+                type="text"
+                name="companyName"
+                id="companyName"
+                placeholder="Google"
+              />
+            </div>
+            <div class="reference">
+              <label for="reference">Reference</label>
+              <input
+                type="text"
+                name="reference"
+                id="reference"
+                placeholder="........"
+              />
+            </div>
+            <div class="email">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="commitcommunity@gmail.com"
+              />
+            </div>
+            <div class="password">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="**************"
+              />
+            </div>
+            <div class="confirmPassword">
+              <label for="confirmPassword">Confirm Password</label>
+              <input
+                type="password"
+                name="confirmPassword"
+                id="confirmPassword"
+                placeholder="**************"
+              />
+            </div>
+            <button type="submit" class="signupButton">Sign up</button>
+          </form>
+        </div>
+
+        <div class="alreadyAccount">
+          <p>Already have an account?</p>
+          <span>Sign in here!</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="logo-animation">
+      <div class="successBrandIcon">
+        <div class="logo">
+          <img src="./assets/brandIcon.svg" alt="" />
+        </div>
+        <div class="brandName">Xtracktion</div>
+      </div>
+      <div class="successGif">
+        <video src="./assets/successGif.mp4" autoplay muted loop alt="" />
+      </div>
+      <div class="successMsg">
+        <p>Success!..</p>
+        <div class="successSubMsg">
+          <p>Thank you.</p>
+          <p>Our Sales team will contact you soon.</p>
+        </div>
+        <a href="/signup.html">Please return to the home</a>
+      </div>
+    </div>
+
+    <script src="./scripts/signup.js"></script>
+  </body>
+</html>

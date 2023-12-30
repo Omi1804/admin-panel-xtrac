@@ -1,0 +1,350 @@
+.menus {
+  width: 14rem;
+  height: 90vh;
+  position: fixed;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border: 1px solid var(--gray-palette-300, #e7e8e9);
+  background: var(--gray-palette-100, #fff);
+  transition: width 0.3s ease;
+  z-index: 2;
+}
+
+.menus.shrinked {
+  width: 6rem;
+}
+.menus.shrinked .brandIcon {
+  padding-left: 1.6rem;
+
+  > p {
+    display: none;
+  }
+}
+
+.menus.shrinked .leftArrow {
+  right: -1.1rem;
+}
+
+.brandIcon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  gap: 1rem;
+  margin-inline: 2%;
+  margin-block: 1rem 2rem;
+
+  .icon {
+    width: 2.3rem;
+    height: 2.3rem;
+
+    > svg {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  > p {
+    color: var(--gray-palette-900, #0f1928);
+    font-family: Poppins;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+}
+
+.leftArrow {
+  position: absolute;
+  top: 10%;
+  right: -10%;
+  width: 2rem;
+  height: 2rem;
+}
+
+.menusList {
+  margin-inline: 5%;
+  margin-block: 2rem;
+  padding-inline: 5%;
+
+  > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    > li {
+      width: 10rem;
+      padding: 0.3rem;
+      margin-block: 0.4rem;
+      display: flex;
+      gap: 2%;
+      align-items: center;
+      border-radius: 1.5rem;
+      background: var(--gray-palette-200, #f3f3f4);
+
+      .icon {
+        width: 1.7rem;
+        height: 1.7rem;
+        margin-inline-end: 0.4rem;
+        > svg {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      > a {
+        font-family: Poppins;
+        font-size: 0.8rem;
+        font-weight: 200;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        > span {
+          margin-left: 8px;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+
+  .user,
+  .userLogs,
+  .finance,
+  .mining {
+    background: #fff;
+    justify-content: start;
+    margin-block: 0.3rem;
+
+    > a {
+      color: var(--gray-palette-600, #6f757e);
+      font-family: Poppins;
+      font-size: 0.8rem;
+      font-weight: 300;
+    }
+  }
+
+  .setting {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 8%;
+
+    gap: 2%;
+    padding: 2%;
+
+    .icon {
+      width: 1.7rem;
+      height: 1.7rem;
+
+      > svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    > p {
+      color: var(--gray-palette-600, #6f757e);
+      font-family: Poppins;
+      font-size: 0.8rem;
+      margin-left: 0.4rem;
+      font-weight: 300;
+    }
+  }
+}
+
+.menus.shrinked .menusList ul li {
+  margin-block: 0.4rem;
+  margin-inline: 0;
+
+  .icon {
+    margin: 0;
+    padding: 0;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.menus.shrinked .menusList ul .user,
+.menus.shrinked .menusList ul .userLogs,
+.menus.shrinked .menusList ul .finance {
+  margin-block: 0rem;
+}
+
+.menus.shrinked .menusList ul li a,
+.menus.shrinked .menusList .setting p {
+  display: none;
+}
+
+.menus.shrinked .menusList ul li {
+  width: 2.5rem;
+  border-radius: 3rem;
+}
+
+.dropDownList {
+  width: 10rem;
+  height: 11rem;
+  background: white !important;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+}
+
+.firstList {
+  width: 10rem;
+  height: 2.5rem;
+  padding: 0.3rem;
+  display: flex;
+  gap: 2%;
+  align-items: center;
+  border-radius: 1.5rem;
+  background: var(--gray-palette-200, #f3f3f4);
+  .icon {
+    width: 2rem;
+    height: 2rem;
+    margin-inline-end: 0.4rem;
+    > svg {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  > a {
+    font-family: Poppins;
+    font-size: 0.7rem;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > span {
+      margin-left: 13px;
+      margin-top: 4px;
+      font-size: 1.1rem;
+    }
+  }
+}
+.dropdownMenu {
+  position: absolute;
+  width: 10rem;
+  left: 0;
+  top: 3rem;
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    list-style: disc !important;
+
+    > li {
+      width: 9rem;
+      height: 2.4rem;
+      padding-block: 0.5rem;
+      margin-block-end: 0.5rem;
+      align-items: center;
+      display: flex;
+      gap: 2%;
+
+      > span {
+        font-size: 0.5rem;
+        margin-right: 0.3rem;
+        color: var(--gray-palette-900, #0f1928);
+      }
+
+      .icon {
+        width: 2rem;
+        height: 2rem;
+        margin-inline-end: 0.2rem;
+        > svg {
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+
+      > a {
+        width: 100%;
+        font-family: Poppins;
+        font-size: 0.7rem;
+        font-weight: 300;
+        display: flex;
+        border-radius: 1.25rem;
+        color: var(--gray-palette-600, #6f757e);
+        font-family: Montserrat;
+
+        > span {
+          margin-left: 8px;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+.menus.shrinked .menusList {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.menus.shrinked .dropDownList {
+  height: 10.5rem;
+  .firstList {
+    width: 2.5rem;
+    border-radius: 3rem;
+  }
+
+  .dropdownMenu {
+    width: 2rem;
+    top: 3.1rem;
+    left: 0.7rem;
+
+    .dropdown {
+      > li {
+        width: 3rem;
+        padding-block: 2px;
+        margin-block: 1px;
+
+        > span {
+          margin-right: 0.1rem;
+          font-size: 0.4rem;
+        }
+
+        .icon {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+
+        > a {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.userLogs .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6f757e;
+
+  > span {
+    font-size: 1.4rem;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}

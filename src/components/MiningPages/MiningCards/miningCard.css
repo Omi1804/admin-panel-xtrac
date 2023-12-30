@@ -1,0 +1,253 @@
+.miningCards {
+  position: relative;
+  margin-left: 14rem;
+  width: calc(100% - margin-left);
+  transition: all 0.3s ease;
+  padding: 1rem 2rem;
+}
+.miningCards.compress {
+  margin-left: 7rem;
+}
+
+.miningSearchButtons {
+  margin-block: 1.5rem;
+  display: flex;
+  gap: 1.5%;
+  align-items: center;
+
+  > button {
+    border-radius: 0.3rem;
+    border: 1px solid var(--gray-palette-600, #6f757e);
+    background: var(--gray-palette-100, #fff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 0.5rem;
+    height: 2rem;
+    color: var(--gray-palette-600, #6f757e);
+
+    > span {
+      font-size: 1rem;
+      margin-left: 0.3rem;
+    }
+    > p {
+      font-family: Poppins;
+      font-size: 0.9rem;
+      font-weight: 300;
+    }
+  }
+}
+
+.miningFilters {
+  padding-inline: 0.3rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .checklist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+    color: var(--gray-palette-600, #6f757e);
+    font-family: Poppins;
+
+    .checkbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      > input.all {
+        width: 15px;
+        height: 15px;
+      }
+
+      > label {
+        font-size: 0.95rem;
+        font-weight: 300;
+      }
+    }
+
+    > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.3rem;
+
+      .logo {
+        width: 1.1rem;
+        height: 1.1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        > img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
+      > p {
+        font-size: 0.95rem;
+        font-weight: 300;
+      }
+    }
+    .approve > p,
+    .bookMark > p {
+      color: #339af0;
+    }
+    .discard > p {
+      color: #f04848;
+    }
+  }
+
+  .filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray-palette-600, #6f757e);
+    font-family: Poppins;
+    gap: 0.7rem;
+
+    > p {
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
+    > button {
+      border-radius: 0.4rem;
+      border: 0.1px solid var(--gray-palette-600, #6f757e);
+      background: var(--gray-palette-100, #fff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-inline: 0.5rem;
+      height: 2.2rem;
+      color: var(--gray-palette-600, #6f757e);
+      color: var(--gray-palette-600, #6f757e);
+      font-family: Poppins;
+      font-size: 0.85rem;
+      font-weight: 400;
+      gap: 0.3rem;
+
+      > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.miningCards {
+  .cards {
+    margin-block: 2rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.4rem;
+    row-gap: 1rem;
+
+    > div {
+      border-radius: 0.3125rem;
+      border: 1px solid var(--gray-palette-400, #cfd1d4);
+      width: 14rem;
+      height: 18rem;
+      position: relative;
+
+      .cardImg {
+        width: 100%;
+        height: 10rem;
+        margin-block-end: 1.7rem;
+
+        > img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
+      .instaLogo {
+        position: absolute;
+        top: 49%;
+        left: 40%;
+        width: 3.3rem;
+        height: 3.3rem;
+        background: #fff;
+        border-radius: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .headings {
+        width: 100%;
+        text-align: center;
+        font-family: Poppins;
+
+        > h2 {
+          font-weight: 500;
+          font-size: 1rem;
+        }
+
+        > p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: var(--gray-palette-600, #6f757e);
+          font-family: Poppins;
+
+          > span {
+            font-size: 0.9rem;
+            font-weight: 300;
+          }
+        }
+      }
+
+      .description {
+        display: flex;
+
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        padding-inline: 1rem;
+        bottom: 3%;
+
+        > div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .logo {
+            width: 1.2rem;
+            height: 1.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            > img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+          }
+
+          > p {
+            color: var(--gray-palette-600, #6f757e);
+            font-family: Poppins;
+            font-size: 0.8rem;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}
+
+.card.selected {
+  border-color: black;
+  display: none !important;
+}

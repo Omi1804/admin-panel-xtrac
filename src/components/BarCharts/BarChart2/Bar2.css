@@ -1,0 +1,6 @@
+.Bar2 {
+  color: var(--gray-palette-900, #0f1928);
+  font-family: Poppins;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
